@@ -18,7 +18,7 @@
 | 24-08 | AVGO | CTAS | ISRG | MELI | NVDA |
 | 24-09 | ARM  | AVGO | CEG  | META | NVDA |
 | 24-10 | ARM  | CEG  | DASH | NVDA | TTD  |
-| 24-11 | DASH | FTNT | NVDA | TEAM | TSLA |
-| 24-12 | AVGO | AXON | MSTR | PLTR | TSLA |
-| 25-01 | AXON | MRVL | MSTR | PLTR | TSLA |
-| 25-02 | AVGO | MRVL | MSTR | PLTR | TSLA |
+| 24-11 | APP  | DASH | NVDA | TEAM | TSLA |
+| 24-12 | APP  | AXON | MSTR | PLTR | TSLA |
+| 25-01 | APP  | AXON | CEG  | MSTR | PLTR |
+| 25-02 | APP  | CEG  | MSTR | PLTR | TSLA |
