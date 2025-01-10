@@ -1,4 +1,3 @@
-import calendar
 import datetime
 import pickle
 
@@ -37,7 +36,7 @@ def ndx_100_ticker(year_month: str) -> list:
         tickers_as_of(
             symbol_date.year,
             symbol_date.month,
-            calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+            1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
         )
     )
 
@@ -84,7 +83,7 @@ def get_nasdaq_symbols() -> list:
                 tickers_as_of(
                     symbol_date.year,
                     symbol_date.month,
-                    calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+                    1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
                 )
             )
 
