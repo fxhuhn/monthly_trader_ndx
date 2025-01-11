@@ -1,3 +1,4 @@
+# import calendar
 import datetime
 import pickle
 
@@ -32,11 +33,13 @@ def ndx_100_ticker(year_month: str) -> list:
     # month = year_month[-2:]
     symbol_date = datetime.datetime.strptime(year_month, "%y-%m").date()
 
-    return list(
-        tickers_as_of(
-            symbol_date.year,
-            symbol_date.month,
-            1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+    return sorted(
+        list(
+            tickers_as_of(
+                symbol_date.year,
+                symbol_date.month,
+                1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+            )
         )
     )
 
@@ -49,6 +52,7 @@ def backtest(df: pd.DataFrame) -> dict():
     trade_ticker = {}
 
     for year_month in df.reset_index().Month.unique():
+        print(year_month)
         available_ticker = ndx_100_ticker(year_month)
         monthly_ticker = match_available_ticker(
             df_ticker=df.reset_index().Ticker.unique(),
@@ -115,6 +119,7 @@ def main() -> None:
     stocks = load_ndx_100_stocks()
 
     # add upcoming month
+    """
     stocks = pd.concat(
         [
             stocks.dropna(thresh=500),
@@ -126,11 +131,12 @@ def main() -> None:
 
     # fill future date with current data
     stocks.iloc[-1] = stocks.iloc[-4:].ffill().iloc[-1]
+    """
 
     stocks = pre_processing(stocks)
 
     # reduce Data for backtest
-    stocks = stocks.loc[stocks.reset_index().Month.unique()[-22:]].ffill()
+    stocks = stocks.loc[stocks.reset_index().Month.unique()[-4:]].ffill()  # 22
 
     trades = backtest(stocks)
 
