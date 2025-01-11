@@ -13,6 +13,7 @@ def strategy(df, spy) -> pd.DataFrame:
             ["ROC", "ROC_1", "ROC_3", "ROC_6", "ROC_12"]
         ].sort_values("ROC")
     )
+    print("---")
 
     # ticker = list(set(df.index.unique()) - set(ticker))
     if spy.SMA > spy.Close:
