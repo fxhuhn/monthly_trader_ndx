@@ -24,7 +24,8 @@ def add_indicator_day(df: pd.DataFrame) -> pd.DataFrame:
 def resample_month(df: pd.DataFrame) -> pd.DataFrame:
     df = df.reset_index()
 
-    df["Month"] = df["Date"].dt.strftime("%y-%m")
+    df["Month"] = (df["Date"]).dt.strftime("%y-%m")
+    # df["Month"] = (df["Date"] + pd.DateOffset(days=30)).dt.strftime("%y-%m")
 
     df = df.groupby(["Month", "Ticker"]).agg(
         Date=("Date", "last"),
@@ -39,7 +40,7 @@ def resample_month(df: pd.DataFrame) -> pd.DataFrame:
 def add_indicator_month(df: pd.DataFrame) -> pd.DataFrame:
     for interval in [1, 3, 6, 12]:
         df[f"ROC_{interval}"] = df.groupby(level=1)["Close"].transform(
-            lambda x: roc(x, interval)  # .shift(1)
+            lambda x: roc(x, interval).shift(1)
         )
 
     return df
