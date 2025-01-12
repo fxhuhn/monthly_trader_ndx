@@ -11,7 +11,11 @@ from tools import strategy as momentum
 
 def load_stocks(symbols):
     return yf.download(
-        symbols, start="2000-01-01", group_by="ticker", rounding=True, threads=False
+        symbols + ["SPY"],
+        start="2000-01-01",
+        group_by="ticker",
+        rounding=True,
+        threads=False,
     )
 
 
@@ -139,8 +143,9 @@ def load_ndx_100_stocks(cache: bool = True) -> pd.DataFrame:
         try:
             with open("./data/stocks.pkl", "rb") as file:
                 df = pickle.load(file)
-        except Exception as e:
-            print(e)
+        except Exception:
+            df = load_stocks(get_nasdaq_symbols())
+            df.to_pickle("./data/stocks.pkl")
     if df is None:
         df = load_stocks(get_nasdaq_symbols())
         df.to_pickle("./data/stocks.pkl")
@@ -154,7 +159,7 @@ def main() -> None:
 
     # reduce Data for backtest
     stocks = stocks.loc[
-        stocks.reset_index().Month.unique()[-82:]
+        stocks.reset_index().Month.unique()[-46:]
     ]  # 11:166, 18:82, 21:46, 23:22, 21:46
 
     trade_matrix, profit = backtest(stocks)
