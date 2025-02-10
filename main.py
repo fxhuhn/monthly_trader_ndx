@@ -71,6 +71,11 @@ def backtest(
     for year_month in df.reset_index().Month.unique():
         print(f"##  {year_month}")
         available_ticker = ndx_100_ticker(year_month)
+
+        available_ticker = [
+            ticker for ticker in available_ticker if ticker != "GOOG"
+        ]  # skip GOOG
+
         monthly_ticker = match_available_ticker(
             df_ticker=df.reset_index().Ticker.unique(),
             ticker=available_ticker,
