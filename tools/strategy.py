@@ -10,6 +10,7 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
     print(
         f"market regime : {regime.Close:.1f} > {regime.index_ma:.1f} {regime.Close>regime.index_ma}"
     )
+    print(f"market        : {regime.breath} ")
 
     # ticker = []
 

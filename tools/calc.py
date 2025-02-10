@@ -75,6 +75,7 @@ def resample_month_regime(df: pd.DataFrame) -> pd.DataFrame:
     df = df.groupby("Month").agg(
         Close=("Close", "last"),
         index_ma=("index_ma", "last"),
+        breath=("Breath", "last"),
         breath_slow=("breath_slow", "last"),
         breath_fast=("breath_fast", "last"),
     )
