@@ -10,9 +10,11 @@ from tools import strategy as momentum
 
 
 def load_stocks(symbols):
+    symbols = [ticker for ticker in symbols if ticker != "GOOG"]  # skip GOOG
+
     return yf.download(
         symbols + ["QQQ", "SPY"],  # quick & dirty
-        start="2010-01-01",
+        start="2015-01-01",
         group_by="ticker",
         rounding=True,
         threads=False,
@@ -64,12 +66,18 @@ def backtest(df: pd.DataFrame, regime_df: pd.DataFrame) -> dict():
     trade_ticker = {}
 
     for year_month in df.reset_index().Month.unique():
-        print(year_month)
+        print(f"##  {year_month}")
         available_ticker = ndx_100_ticker(year_month)
+
         monthly_ticker = match_available_ticker(
             df_ticker=df.reset_index().Ticker.unique(),
             ticker=available_ticker,
         )
+
+        if len(list(set(available_ticker) - set(monthly_ticker))):
+            print(
+                f"Missing symbols  : {list(set(available_ticker) - set(monthly_ticker))}"
+            )
 
         trade_ticker[year_month] = momentum.strategy(
             df.loc[
@@ -127,22 +135,6 @@ def load_ndx_100_stocks(cache: bool = True) -> pd.DataFrame:
 
 def main() -> None:
     stocks = load_ndx_100_stocks()
-
-    # add upcoming month
-    """
-    stocks = pd.concat(
-        [
-            stocks.dropna(thresh=500),
-            pd.DataFrame(
-                pd.Series(stocks.index[-1] + pd.Timedelta(days=30)), columns=["Date"]
-            ).set_index("Date"),
-        ]
-    )
-
-    # fill future date with current data
-    stocks.iloc[-1] = stocks.iloc[-4:].ffill().iloc[-1]
-    """
-
     stocks, regime = pre_processing(stocks)
 
     # reduce Data for backtest
