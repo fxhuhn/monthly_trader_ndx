@@ -4,13 +4,13 @@ import pandas as pd
 def strategy(df, regime, last_ticker) -> pd.DataFrame:
     MAX_TICKER = 5
 
+    print(f"market        : {regime.breath} ")
     print(
-        f"market breath : {regime.breath_fast} > {regime.breath_slow} {regime.breath_fast>regime.breath_slow}"
+        f"market breath : {regime.breath_fast:.1f} > {regime.breath_slow:.1f} {regime.breath_fast>regime.breath_slow}"
     )
     print(
         f"market regime : {regime.Close:.1f} > {regime.index_ma:.1f} {regime.Close>regime.index_ma}"
     )
-    print(f"market        : {regime.breath} ")
 
     # ticker = []
 
@@ -28,6 +28,6 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
         return df["ROC"].nlargest(MAX_TICKER).index
     else:
         if len(last_ticker) > 0:
-            return list(set(df["ROC"].nlargest(MAX_TICKER).index) - set(last_ticker))
+            return list(set(last_ticker) & set(df["ROC"].nlargest(MAX_TICKER).index))
 
     return []
