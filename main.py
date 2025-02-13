@@ -10,9 +10,11 @@ from tools import strategy as momentum
 
 
 def load_stocks(symbols):
+    symbols = [ticker for ticker in symbols if ticker != "GOOG"]  # skip GOOG
+
     return yf.download(
         symbols + ["QQQ", "SPY"],  # quick & dirty
-        start="2010-01-01",
+        start="2015-01-01",
         group_by="ticker",
         rounding=True,
         threads=False,
@@ -71,10 +73,6 @@ def backtest(
     for year_month in df.reset_index().Month.unique():
         print(f"##  {year_month}")
         available_ticker = ndx_100_ticker(year_month)
-
-        available_ticker = [
-            ticker for ticker in available_ticker if ticker != "GOOG"
-        ]  # skip GOOG
 
         monthly_ticker = match_available_ticker(
             df_ticker=df.reset_index().Ticker.unique(),
