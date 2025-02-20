@@ -33,11 +33,14 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
             ticker = list(set(last_ticker) & set(df["ROC"].nlargest(MAX_TICKER).index))
 
     print("")
+    """
     print(
         df[df.index.isin(ticker)][
             ["ROC", "ROC_1", "ROC_3", "ROC_6", "ROC_12"]
         ].sort_values("ROC", ascending=False)
     )
+    """
+    print(df[df.index.isin(ticker)].sort_values("ROC", ascending=False))
     print("---")
 
     return ticker
