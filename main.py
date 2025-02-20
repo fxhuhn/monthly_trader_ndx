@@ -192,7 +192,8 @@ def main() -> None:
     output = trade_matrix.unstack(level=1)
     output.loc[:, "Average"] = output.mean(axis=1)
     output.loc["Average", :] = output.mean(axis=0)
-    output.loc[:, "Yearly"] = output.Average.mul(12)
+    # output.loc[:, "Yearly"] = output.Average.mul(12)
+    output.loc[:, "Yearly"] = output.Average.mul(output.count(axis=1) - 1)
     output = output.round(2)
 
     with open("matrix.md", "w") as text_file:
