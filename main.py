@@ -18,6 +18,7 @@ def load_stocks(symbols):
         group_by="ticker",
         rounding=True,
         threads=False,
+        auto_adjust=False,
     )
 
 
