@@ -21,4 +21,4 @@
 | 24-12 | DASH | NVDA |      |      |      |
 | 25-01 |      |      |      |      |      |
 | 25-02 | APP  | AXON | MSTR | PLTR | TSLA |
-| 25-03 | APP  | CEG  | DASH | MSTR | PLTR |
+| 25-03 | APP  | AVGO | DASH | MSTR | PLTR |
