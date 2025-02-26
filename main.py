@@ -184,7 +184,7 @@ def main() -> None:
 
     # reduce Data for backtest
     stocks = stocks.loc[
-        stocks.reset_index().Month.unique()[-22:]
+        stocks.reset_index().Month.unique()[-82:]
     ]  # 11:166, 18:82, 21:46, 23:22
 
     trade_matrix, profit = backtest(stocks, regime)
@@ -194,6 +194,8 @@ def main() -> None:
     output.loc["Average", :] = output.mean(axis=0)
     # output.loc[:, "Yearly"] = output.Average.mul(12)
     output.loc[:, "Yearly"] = output.Average.mul(output.count(axis=1) - 1)
+    # calc yearly average
+    output.loc["Average", "Yearly"] = output.loc[:, "Yearly"][:-1].mean()
     output = output.round(2)
 
     with open("matrix.md", "w") as text_file:
