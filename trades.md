@@ -15,7 +15,7 @@
 | 19-07 | AMD  | CDNS | MELI | SBUX | SNPS |
 | 19-08 | CDNS | MELI | SBUX | SNPS |      |
 | 19-09 | COST | KLAC | MELI | SBUX | SNPS |
-| 19-10 | ASML | ATVI | CERN | KLAC | LRCX |
+| 19-10 | ASML | ATVI | CELG | KLAC | LRCX |
 | 19-11 | AMAT | AMD  | CHTR | KLAC | LRCX |
 | 19-12 | AAPL | AMD  | KLAC | LRCX | LULU |
 | 20-01 | AAPL | AMD  | LRCX | SWKS | TSLA |
