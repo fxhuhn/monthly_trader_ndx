@@ -1,7 +1,7 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
 | 18-07 | ALGN | ALXN | AMZN | NFLX | NLOK |
-| 18-08 | ALGN | ALXN | ILMN | MXIM | MYL  |
+| 18-08 | ALGN | ALXN | ILMN | MU   | MXIM |
 | 18-09 | ALGN | ALXN | ILMN |      |      |
 | 18-10 | ALGN | ALXN | ILMN |      |      |
 | 18-11 |      |      |      |      |      |
@@ -15,7 +15,7 @@
 | 19-07 | AMD  | CDNS | MELI | SBUX | SNPS |
 | 19-08 | CDNS | MELI | SBUX | SNPS |      |
 | 19-09 | COST | KLAC | MELI | SBUX | SNPS |
-| 19-10 | ASML | ATVI | CERN | KLAC | LRCX |
+| 19-10 | ASML | ATVI | CELG | KLAC | LRCX |
 | 19-11 | AMAT | AMD  | CHTR | KLAC | LRCX |
 | 19-12 | AAPL | AMD  | KLAC | LRCX | LULU |
 | 20-01 | AAPL | AMD  | LRCX | SWKS | TSLA |
