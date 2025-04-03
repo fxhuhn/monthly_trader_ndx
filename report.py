@@ -1,8 +1,23 @@
 import pandas as pd
 import yfinance as yf
 
-spy = yf.download("spy", start="2000-01-01")
-ndx = yf.download("qqq", start="2000-01-01")
+
+def resample_monthly(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.reset_index().copy()
+    df["Month"] = (df["Date"]).dt.strftime("%y-%m")
+    df = df.groupby("Month").agg(Open=("Open", "last"))
+    df["Date"] = pd.to_datetime(
+        df.reset_index()["Month"], format="%y-%m", errors="coerce"
+    ).tolist()
+    df.set_index("Date", inplace=True)
+    return df
+
+
+spy = yf.download("spy", start="2000-01-01", auto_adjust=False, multi_level_index=False)
+ndx = yf.download("qqq", start="2000-01-01", auto_adjust=False, multi_level_index=False)
+
+spy = resample_monthly(spy)
+ndx = resample_monthly(ndx)
 
 
 depot = pd.read_csv("./data/depot.csv")
