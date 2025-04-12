@@ -14,7 +14,7 @@
 | 19-07 | AMD  | CDNS | MELI | SBUX | SNPS |
 | 19-08 | CDNS | MELI | SBUX | SNPS |      |
 | 19-09 | COST | KLAC | MELI | SBUX | SNPS |
-| 19-10 | ASML | ATVI | CERN | KLAC | LRCX |
+| 19-10 | ASML | ATVI | CELG | KLAC | LRCX |
 | 19-11 | AMAT | AMD  | CHTR | KLAC | LRCX |
 | 19-12 | AAPL | AMD  | KLAC | LRCX | LULU |
 | 20-01 | AAPL | AMD  | LRCX | SWKS | TSLA |
@@ -34,7 +34,7 @@
 | 21-03 | MRNA | PDD  | PTON | TSLA |      |
 | 21-04 | AMAT | MRNA | PDD  | PTON | TSLA |
 | 21-05 | AMAT | MRNA | TSLA |      |      |
-| 21-06 | AMAT | ATVI | LRCX | MRNA | TSLA |
+| 21-06 | AMAT | ASML | LRCX | MRNA | TSLA |
 | 21-07 | AMAT | DOCU | MRNA | NVDA | TSLA |
 | 21-08 | MRNA |      |      |      |      |
 | 21-09 | MRNA |      |      |      |      |
