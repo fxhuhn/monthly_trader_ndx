@@ -1,6 +1,6 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 18-08 | ALGN | ALXN | ILMN | MU   | MXIM |
+| 18-08 | ALGN | ALXN | ILMN | MU   | MYL  |
 | 18-09 | ALGN | ALXN | ILMN |      |      |
 | 18-10 | ALGN | ALXN | ILMN |      |      |
 | 18-11 |      |      |      |      |      |
