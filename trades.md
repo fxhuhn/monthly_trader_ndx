@@ -81,4 +81,4 @@
 | 25-03 | APP  | MSTR | PLTR |      |      |
 | 25-04 | APP  | MSTR | PLTR |      |      |
 | 25-05 | APP  | AXON | MSTR | NFLX | PLTR |
-| 25-06 | APP  | AVGO | AXON | MSTR | PLTR |
+| 25-06 | APP  | AXON | MSTR | NFLX | PLTR |
