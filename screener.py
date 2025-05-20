@@ -26,11 +26,11 @@ def pre_processing(df: pd.DataFrame) -> pd.DataFrame:
     df = calc.convert_to_multiindex(df)
 
     # add one day in future
-    df_help = df.copy().reset_index()
-    df_help = df_help[df_help.Date == df_help.Date.max()]
-    df_help.Date = df_help.Date + pd.DateOffset(days=26)
-    df_help = df_help.set_index(["Ticker", "Date"])
-    df = pd.concat([df, df_help])
+    # df_help = df.copy().reset_index()
+    # df_help = df_help[df_help.Date == df_help.Date.max()]
+    # df_help.Date = df_help.Date + pd.DateOffset(days=26)
+    # df_help = df_help.set_index(["Ticker", "Date"])
+    # df = pd.concat([df, df_help])
 
     df = calc.add_indicator_day(df)
 
