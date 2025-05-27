@@ -98,6 +98,8 @@ def resample_month(df: pd.DataFrame) -> pd.DataFrame:
         Uptrend=("Uptrend", "last"),
         # cross=("cross", "last"),
     )
+    df["Open_1"] = df.groupby(level=1)["Open"].shift(-1)
+    df["Close_1"] = df.groupby(level=1)["Close"].shift(-1)
 
     return df
 
