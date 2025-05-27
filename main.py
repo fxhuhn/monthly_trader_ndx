@@ -101,10 +101,10 @@ def backtest(
         )
 
     for year_month, ticker in trade_ticker.items():
-        trades = df.loc[(year_month, ticker), ["Open", "Close"]]
+        trades = df.loc[(year_month, ticker), ["Open_1", "Close_1"]]
         if len(trades) > 0:
-            trades = trades.round({"Open_1": 2, "Close_1": 2, "Profit": 1, "Gewinn": 2})
-            trades.rename(columns={"Open_1": "Open", "Close_1": "Close"})
+            trades.rename(columns={"Open_1": "Open", "Close_1": "Close"}, inplace=True)
+            trades = trades.round({"Open": 2, "Close": 2, "Profit": 1, "Gewinn": 2})
 
             trades["Profit"] = (trades.Close - trades.Open) / trades.Open * 100
             trades["qty"] = (start / len(trades)) // trades.Open
