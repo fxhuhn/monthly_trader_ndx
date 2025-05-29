@@ -1,6 +1,6 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 18-09 | ALGN | ALXN | AMZN | ILMN | MU   |
+| 18-09 | ALGN | ALXN | AMZN | ILMN | MXIM |
 | 18-10 | ALGN | ALXN | AMZN | ILMN |      |
 | 18-11 | ALGN | ALXN | AMZN | ILMN |      |
 | 18-12 |      |      |      |      |      |
