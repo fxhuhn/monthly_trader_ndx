@@ -1,8 +1,7 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 18-09 | ALGN | ALXN | AMZN | ILMN | MU   |
-| 18-10 | ALGN | ALXN | AMZN | ILMN |      |
-| 18-11 | ALGN | ALXN | AMZN | ILMN |      |
+| 18-10 |      |      |      |      |      |
+| 18-11 |      |      |      |      |      |
 | 18-12 |      |      |      |      |      |
 | 19-01 |      |      |      |      |      |
 | 19-02 |      |      |      |      |      |
@@ -82,3 +81,4 @@
 | 25-04 | APP  | MSTR | PLTR |      |      |
 | 25-05 | APP  | MSTR | PLTR |      |      |
 | 25-06 | APP  | AXON | MSTR | NFLX | PLTR |
+| 25-07 | APP  | AVGO | AXON | MSTR | PLTR |
