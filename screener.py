@@ -141,7 +141,7 @@ def main() -> None:
     stocks, regime = pre_processing(stocks)
 
     # reduce Data for backtest
-    stocks = stocks.loc[stocks.reset_index().Month.unique()[-82:]].ffill()  # 22
+    stocks = stocks.loc[stocks.reset_index().Month.unique()[-22:]].ffill()  # 22
 
     trades = backtest(stocks, regime)
 
