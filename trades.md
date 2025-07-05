@@ -1,6 +1,5 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 23-10 |      |      |      |      |      |
 | 23-11 |      |      |      |      |      |
 | 23-12 | ADBE | AVGO | META | NVDA | PDD  |
 | 24-01 | CRWD | MDB  | META | NVDA | PDD  |
@@ -22,3 +21,4 @@
 | 25-05 | APP  | MSTR | PLTR |      |      |
 | 25-06 | APP  | AXON | MSTR | NFLX | PLTR |
 | 25-07 | APP  | AVGO | AXON | MSTR | PLTR |
+| 25-08 | APP  | AXON | DASH | MSTR | PLTR |
