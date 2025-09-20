@@ -11,12 +11,12 @@
 | 24-09 | ARM  | CEG  | CTAS | NVDA | SMCI |
 | 24-10 | ARM  | AVGO | ISRG | MELI | NVDA |
 | 24-11 | ARM  | NVDA |      |      |      |
-| 24-12 | APP  | ARM  | CEG  | DASH | NVDA |
-| 25-01 | APP  | NVDA |      |      |      |
-| 25-02 | APP  |      |      |      |      |
-| 25-03 | APP  | AXON | CEG  | MSTR | PLTR |
-| 25-04 | APP  | MSTR | PLTR |      |      |
-| 25-05 | APP  | MSTR | PLTR |      |      |
+| 24-12 | ARM  | NVDA |      |      |      |
+| 25-01 | NVDA |      |      |      |      |
+| 25-02 |      |      |      |      |      |
+| 25-03 |      |      |      |      |      |
+| 25-04 |      |      |      |      |      |
+| 25-05 |      |      |      |      |      |
 | 25-06 | APP  | AXON | MSTR | NFLX | PLTR |
 | 25-07 | APP  | AVGO | AXON | MSTR | PLTR |
 | 25-08 | APP  | AXON | DASH | MSTR | PLTR |
