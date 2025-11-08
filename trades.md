@@ -1,6 +1,5 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 24-02 | AMD  | CRWD | META | NVDA | PDD  |
 | 24-03 | AMD  | CRWD | META | NVDA | PANW |
 | 24-04 | AMD  | CEG  | CRWD | META | NVDA |
 | 24-05 | CEG  | CRWD | NVDA |      |      |
@@ -22,3 +21,4 @@
 | 25-09 | APP  | DASH | PLTR |      |      |
 | 25-10 | APP  | PLTR |      |      |      |
 | 25-11 | APP  | PLTR |      |      |      |
+| 25-12 | APP  | PLTR |      |      |      |
