@@ -16,14 +16,14 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
 
     df["ROC"] = df["ROC_1"] + df["ROC_3"] + df["ROC_6"] + df["ROC_12"]
 
-    """
     print(
+    print("--- Demo")
+
         df.loc[df["ROC"].nlargest(10).index][
             ["ROC", "ROC_1", "ROC_3", "ROC_6", "ROC_12"]
         ].sort_values("ROC", ascending=False)
     )
     print("---")
-    """
 
     ticker = []
     if regime.breath_fast > regime.breath_slow and regime.Close > regime.index_ma:
