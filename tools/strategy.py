@@ -16,7 +16,6 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
 
     df["ROC"] = df["ROC_1"] + df["ROC_3"] + df["ROC_6"] + df["ROC_12"]
 
-    print(
     print("--- Demo")
 
         df.loc[df["ROC"].nlargest(10).index][
