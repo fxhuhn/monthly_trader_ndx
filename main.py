@@ -50,15 +50,19 @@ def ndx_100_ticker(year_month: str) -> list:
     # month = year_month[-2:]
     symbol_date = datetime.datetime.strptime(year_month, "%y-%m").date()
 
-    return sorted(
-        list(
-            tickers_as_of(
-                symbol_date.year,
-                symbol_date.month,
-                1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+    try:
+        return sorted(
+            list(
+                tickers_as_of(
+                    symbol_date.year,
+                    symbol_date.month,
+                    1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+                )
             )
         )
-    )
+    except Exception as e:
+        print(f"Error fetching tickers for {year_month}: {e}")
+        return []
 
 
 def match_available_ticker(df_ticker: list, ticker: list) -> list:
