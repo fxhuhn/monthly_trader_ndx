@@ -95,7 +95,7 @@ def resample_month(df: pd.DataFrame) -> pd.DataFrame:
         Open=("Open", "first"),
         Close=("Close", "last"),
         SMA=("SMA", "last"),
-        Uptrend=("Uptrend", "last"),
+        # Uptrend=("Uptrend", "last"),
         # cross=("cross", "last"),
     )
     df["Open_1"] = df.groupby(level=1)["Open"].shift(-1)
@@ -107,7 +107,7 @@ def resample_month(df: pd.DataFrame) -> pd.DataFrame:
 def add_indicator_month(df: pd.DataFrame) -> pd.DataFrame:
     for interval in [1, 3, 6, 12]:
         df[f"ROC_{interval}"] = df.groupby(level=1)["Close"].transform(
-            lambda x: roc(x, interval).shift(1)
+            lambda x: roc(x, interval)  # .shift(1)
         )
 
     return df
