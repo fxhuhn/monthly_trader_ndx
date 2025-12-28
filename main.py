@@ -62,7 +62,22 @@ def ndx_100_ticker(year_month: str) -> list:
         )
     except Exception as e:
         print(f"Error fetching tickers for {year_month}: {e}")
-        return []
+        print("Fallback to previous month")
+        if symbol_date.month == 1:
+            prev_month = 12
+            prev_year = symbol_date.year - 1
+        else:
+            prev_month = symbol_date.month - 1
+            prev_year = symbol_date.year
+        return sorted(
+            list(
+                tickers_as_of(
+                    prev_year,
+                    prev_month,
+                    28,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+                )
+            )
+        )
 
 
 def match_available_ticker(df_ticker: list, ticker: list) -> list:
