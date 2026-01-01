@@ -129,6 +129,13 @@ def get_nasdaq_symbols() -> list:
                     1,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
                 )
             )
+    nasdaq_tickers["26-01"] = list(
+        tickers_as_of(
+            2025,
+            12,
+            30,  # calendar.monthrange(symbol_date.year, symbol_date.month)[1],
+        )
+    )
 
     all = []
 
