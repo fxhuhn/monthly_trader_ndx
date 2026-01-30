@@ -21,4 +21,4 @@
 | 25-11 | APP  | PLTR |      |      |      |
 | 25-12 |      |      |      |      |      |
 | 26-01 | LRCX | MU   | STX  | WBD  | WDC  |
-| 26-02 | LRCX | MU   | STX  | WBD  | WDC  |
+| 26-02 | INTC | LRCX | MU   | STX  | WDC  |
