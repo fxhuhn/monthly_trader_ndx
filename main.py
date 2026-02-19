@@ -162,7 +162,7 @@ def backtest(
 
 def get_nasdaq_symbols() -> list:
     nasdaq_tickers = dict()
-    for year in range(2016, 2026, 1):
+    for year in range(2016, 2027, 1):
         for month in range(1, 13, 1):
             symbol_date = datetime.date(year, month, 1)
 

@@ -118,7 +118,7 @@ def backtest(df: pd.DataFrame, regime_df: pd.DataFrame) -> dict():
 def get_nasdaq_symbols() -> list:
     nasdaq_tickers = dict()
     print("Loading NASDAQ tickers from 2017 up to 2026")
-    for year in range(2017, 2026, 1):
+    for year in range(2017, 2027, 1):
         for month in range(1, 13, 1):
             symbol_date = datetime.date(year, month, 1)
 
