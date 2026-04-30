@@ -21,4 +21,4 @@
 | 26-02 | INTC | LRCX | MU   | STX  | WDC  |
 | 26-03 | LRCX | MU   | STX  | WDC  |      |
 | 26-04 | LRCX | MU   | STX  | WDC  |      |
-| 26-05 | MU   | STX  | WDC  |      |      |
+| 26-05 | INTC | MU   | SNDK | STX  | WDC  |
