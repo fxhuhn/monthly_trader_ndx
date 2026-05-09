@@ -1,6 +1,5 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 24-08 |      |      |      |      |      |
 | 24-09 | ARM  | AVGO | CTAS | MELI | NVDA |
 | 24-10 | ARM  | AVGO | NVDA |      |      |
 | 24-11 | ARM  | AVGO | NVDA |      |      |
@@ -22,3 +21,4 @@
 | 26-03 | LRCX | MU   | STX  | WDC  |      |
 | 26-04 | LRCX | MU   | STX  | WDC  |      |
 | 26-05 | INTC | MU   | SNDK | STX  | WDC  |
+| 26-06 | INTC | MU   | SNDK | STX  | WDC  |
