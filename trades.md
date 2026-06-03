@@ -1,8 +1,7 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 24-09 | ARM  | AVGO | CTAS | MELI | NVDA |
-| 24-10 | ARM  | AVGO | NVDA |      |      |
-| 24-11 | ARM  | AVGO | NVDA |      |      |
+| 24-10 |      |      |      |      |      |
+| 24-11 |      |      |      |      |      |
 | 24-12 | APP  | DASH | NVDA | TEAM | TSLA |
 | 25-01 | APP  |      |      |      |      |
 | 25-02 | APP  |      |      |      |      |
@@ -22,3 +21,4 @@
 | 26-04 | LRCX | MU   | STX  | WDC  |      |
 | 26-05 | INTC | MU   | SNDK | STX  | WDC  |
 | 26-06 | LITE | MU   | SNDK | STX  | WDC  |
+| 26-07 | LITE | MU   | SNDK | STX  | WDC  |
