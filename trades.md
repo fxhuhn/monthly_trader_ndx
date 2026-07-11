@@ -21,4 +21,4 @@
 | 26-05 | INTC | MU   | SNDK | STX  | WDC  |
 | 26-06 | LITE | MU   | SNDK | STX  | WDC  |
 | 26-07 | LITE | MU   | SNDK | STX  | WDC  |
-| 26-08 | INTC | LITE | MU   | SNDK | WDC  |
+| 26-08 | LITE | MU   | SNDK | STX  | WDC  |
