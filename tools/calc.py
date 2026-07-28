@@ -71,7 +71,7 @@ def resample_month_regime(df: pd.DataFrame) -> pd.DataFrame:
     df = df.reset_index()
 
     # df["Month"] = (df["Date"]).dt.strftime("%y-%m")
-    df["Month"] = (df["Date"] + pd.DateOffset(days=30)).dt.strftime("%y-%m")
+    df["Month"] = (df["Date"] + pd.DateOffset(months=1)).dt.strftime("%y-%m")
 
     df = df.groupby("Month").agg(
         Close=("Close", "last"),
@@ -88,7 +88,7 @@ def resample_month(df: pd.DataFrame) -> pd.DataFrame:
     df = df.reset_index()
 
     # df["Month"] = (df["Date"]).dt.strftime("%y-%m")
-    df["Month"] = (df["Date"] + pd.DateOffset(days=30)).dt.strftime("%y-%m")
+    df["Month"] = (df["Date"] + pd.DateOffset(months=1)).dt.strftime("%y-%m")
 
     df = df.groupby(["Month", "Ticker"]).agg(
         Date=("Date", "last"),
