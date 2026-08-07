@@ -1,6 +1,5 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 24-11 |      |      |      |      |      |
 | 24-12 | APP  | DASH | NVDA | TEAM | TSLA |
 | 25-01 | APP  | TSLA |      |      |      |
 | 25-02 | APP  |      |      |      |      |
@@ -22,3 +21,4 @@
 | 26-06 | LITE | MU   | SNDK | STX  | WDC  |
 | 26-07 | ALAB | INTC | MU   | SNDK | WDC  |
 | 26-08 | LITE | MU   | SNDK | STX  | WDC  |
+| 26-09 | LITE | MU   | SNDK | STX  | WDC  |
