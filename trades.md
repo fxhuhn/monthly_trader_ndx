@@ -21,4 +21,4 @@
 | 26-07 | ALAB | INTC | MU   | SNDK | WDC  |
 | 26-08 | LITE | MU   | SNDK | STX  | WDC  |
 | 26-09 | LITE | MU   | SNDK | STX  | WDC  |
-| 26-10 | LITE | MU   | SNDK | STX  | WDC  |
+| 26-10 | AMD  | LITE | MU   | SNDK | STX  |
