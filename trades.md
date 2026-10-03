@@ -1,6 +1,5 @@
 |       | 0    | 1    | 2    | 3    | 4    |
 |:------|:-----|:-----|:-----|:-----|:-----|
-| 25-01 |      |      |      |      |      |
 | 25-02 |      |      |      |      |      |
 | 25-03 | APP  | GILD | MSTR | PLTR | TMUS |
 | 25-04 | APP  | GILD | MSTR | PLTR | TMUS |
@@ -22,3 +21,4 @@
 | 26-08 | LITE | MU   | SNDK | STX  | WDC  |
 | 26-09 | LITE | MU   | SNDK | STX  | WDC  |
 | 26-10 | LITE | MU   | SNDK |      |      |
+| 26-11 | LITE | MU   | SNDK |      |      |
