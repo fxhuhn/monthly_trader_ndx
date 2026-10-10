@@ -8,10 +8,10 @@
 | 25-07 | APP  | AXON | DASH | MSTR | PLTR |
 | 25-08 | AMD  | APP  | AXON | DASH | PLTR |
 | 25-09 | APP  | AVGO | MSTR | PLTR | SHOP |
-| 25-10 | APP  | PLTR |      |      |      |
+| 25-10 | APP  | AVGO | PLTR |      |      |
 | 25-11 | APP  | PLTR |      |      |      |
 | 25-12 |      |      |      |      |      |
-| 26-01 | LRCX | MU   | STX  | WBD  | WDC  |
+| 26-01 | INSM | LRCX | MU   | STX  | WDC  |
 | 26-02 | INTC | LRCX | MU   | STX  | WDC  |
 | 26-03 | LRCX | MU   | STX  | WDC  |      |
 | 26-04 | LRCX | MU   | STX  | WDC  |      |
