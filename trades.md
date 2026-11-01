@@ -7,7 +7,7 @@
 | 25-06 | APP  | AVGO | AXON | MSTR | PLTR |
 | 25-07 | APP  | AXON | DASH | MSTR | PLTR |
 | 25-08 | AMD  | APP  | AXON | DASH | PLTR |
-| 25-09 | APP  | AVGO | MSTR | PLTR | SHOP |
+| 25-09 | APP  | AVGO | AXON | PLTR | SHOP |
 | 25-10 | APP  | AVGO | PLTR |      |      |
 | 25-11 | APP  | PLTR |      |      |      |
 | 25-12 |      |      |      |      |      |
@@ -16,9 +16,9 @@
 | 26-03 | LRCX | MU   | STX  | WDC  |      |
 | 26-04 | LRCX | MU   | STX  | WDC  |      |
 | 26-05 | INTC | MU   | SNDK | STX  | WDC  |
-| 26-06 | LITE | MU   | SNDK | STX  | WDC  |
-| 26-07 | ALAB | INTC | MU   | SNDK | WDC  |
-| 26-08 | LITE | MU   | SNDK | STX  | WDC  |
+| 26-06 | INTC | MU   | SNDK | STX  | WDC  |
+| 26-07 | INTC | MU   | SNDK | STX  | WDC  |
+| 26-08 | INTC | MU   | SNDK | STX  | WDC  |
 | 26-09 | LITE | MU   | SNDK | STX  | WDC  |
-| 26-10 | LITE | MU   | SNDK |      |      |
+| 26-10 | LITE | MU   | SNDK | STX  |      |
 | 26-11 | LITE | MU   | SNDK |      |      |
