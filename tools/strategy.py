@@ -24,12 +24,26 @@ def strategy(df, regime, last_ticker) -> pd.DataFrame:
     )
     print("---")
 
+    BUFFER_RANK = MAX_TICKER + 1  # Platz 6: Puffer-Schwelle für bestehende Werte
+
+    ranked = df.sort_values("ROC", ascending=False)
+    top_buffer_tickers = set(ranked.head(BUFFER_RANK).index)
+
+    # 1. Bestehende Werte behalten, wenn sie noch in den Top 6 sind
+    keep = [t for t in last_ticker if t in top_buffer_tickers][:MAX_TICKER]
+
     ticker = []
     if regime.breath_fast > regime.breath_slow and regime.Close > regime.index_ma:
-        ticker = df["ROC"].nlargest(MAX_TICKER).index
+        ticker = list(keep)
+        # 2. Im Bullenmarkt: Freie Plätze von oben nach unten bis MAX_TICKER (5) auffüllen
+        for t in ranked.index:
+            if len(ticker) >= MAX_TICKER:
+                break
+            if t not in ticker:
+                ticker.append(t)
     else:
-        if len(last_ticker) > 0:
-            ticker = list(set(last_ticker) & set(df["ROC"].nlargest(MAX_TICKER).index))
+        # Im Bärenmarkt: Nur bestehende Positionen halten (keine Neukäufe)
+        ticker = keep
 
     print("")
     """
